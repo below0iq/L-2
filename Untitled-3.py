@@ -49,7 +49,7 @@ def is_shorten_link(url, token):
 
 def main():
     url = input("Введите ссылку: ")
-    token = os.environ["TOKEN"]
+    token = os.environ["VK_SERVICE_TOKEN"]
     if is_shorten_link(url, token):
         try:
             if len(count_clicks(token, url)) == 0:
